@@ -128,15 +128,11 @@
       {JD Digits Technology Holding Co.Ltd (formerly JD Finance) }{BeiJing, China}
       {Risk Analyst}{Sep. 2018 - Present}
       \resumeItemListStart
-        \resumeItem{Data analysis}
-          {Designed and trained a shallow CNN to classify rotated images. Achieved F1-score of 0.99 on test set of 1M+ images}
+        \resumeItem{Data Analysis}
+          {Gain insight into business through metrics and visualization,output analysis report to support business, such as the commercial paper business's offline advertising analysis
+          }
         \resumeItem{Modeling}
-          {A computer vision model to classify views of automobile images
-            \begin{itemize}
-                \item Implemented an expectation maximization algorithm to sample and classify images from 6M+ unlabeled images to prepare a clean dataset of 100K+ images for training
-                \item Designed and trained a low-complexity CNN to classify 20+ views of automobile images resulting in 30\% improvement in  F1-score compared to SVM model
-                \item Reduced model complexity and size by 40\% by freezing model and performing post-training quantization
-            \end{itemize}
+          {Bulid machine learning or statistical models to solve business problems,mainly focus on rating model for listed enterprises and SME's closure risk model
           }
 
       \resumeItemListEnd
@@ -145,11 +141,11 @@
       {Guangzhou Bank Credit Card Center}{GuangZhou, China}
       {Data Analyst}{Jun. 2017 - Nov. 2018}
       \resumeItemListStart
-        \resumeItem{Operational Data Monitoring}
+        \resumeItem{Data Monitoring}
           {Establish the data index system of each income product (credit card installment, Cash instalment, etc.), monitor customer lifetime value of AARRR , support the business to understand the product's operation situation and the problem}
-        \resumeItem{Development of channel strategy for credit card installment}
-          {Participate in the development of data-driven growth strategy, responsible for channel's data operation strategy and A/B testing program evaluation and development }          
-        \resumeItem{Data analysis and modeling}
+        \resumeItem{Develop Strategy for Installment Business}
+          {Generate data-driven growth strategy for business, responsible for channel's data operation strategy and A/B testing program evaluation and development }          
+        \resumeItem{Data Analysis and Modeling}
           {Support business growth with analytics and mining for credit card customers, output a thematic analysis report or an algorithmic model }            
       \resumeItemListEnd
 
@@ -158,18 +154,32 @@
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Closure risk forecast model for SME}
-     {\vspace{-5pt} \hfill{Jun. 2017 - Nov. 2018}
+    \resumeSubItem{Closure Risk Forecast Model for SME}
+     {\vspace{-5pt} \hfill{May. 2017 - Nov. 2018}
         \begin{itemize}
             \item Implemented a CRF in $O(m|\mathcal{Y}|^2)$ time to achieve a 84\% letter-wise accuracy on UPenn OCR dataset
             \item Implemented OpenMPI CRF using PETSc and Tao to achieve 77.1\% letter-wise accuracy
         \end{itemize}
      }
-    \resumeSubItem{Rating Model for Listed Companies}{ propose a novel
-sparsity-aware algorithm for sparse data and weighted quantile
-sketch for approximate tree learning} \hfill{Jun. 2017 - Nov. 2018}
-    \resumeSubItem{Channel Preference Model for Credit Card Instalment Customers}
-      {Implemented GBDT to achieve 78.66\% accuracy, 0.69 F1-score} \hfill{Jun. 2017 - Nov. 2018}
+     
+    \resumeSubItem{Rating Model for Listed Enterprise}
+    {  \hfill{Feb.2019 - Apr.2019}
+       \vspace{-5pt}
+        \begin{itemize}
+            \item Propose a novel method for Enterprise Rating. Similar to the Nearest Neighbor Algorithm, we define good and bad cluster, then calculate the distance between enterprise and the cluster as basis to build up a more discriminating rating for listed enterprise.
+            \item Implemented a ordinal logistic regression for rating result and output model weight to generalize to the enterprise test sample that issues bonds, and keep a uniform rating distribution with PSI=0.1
+        \end{itemize}
+    }
+    
+    \resumeSubItem{Channel Preference Model for Instalment Customers}
+    {   \hfill{Jun.2018 - Sep.2018}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Implemented GBDT model to achieve 78.66\% accuracy. Cleaned and extracted the variables of credit card staging channel nearly 200, used stepwise discriminant analysis and random forest to filter variables.
+            \item Generated A/B test for evaluation,improved response rate by nearly 1\%
+        \end{itemize}
+    }
+    
     \resumeSubItem{ACM SIGKDD CUP of Fresh Air}
       {A natural speech to code converter for aiding programmers with disabilities
         \vspace{-5pt}
@@ -178,7 +188,17 @@ sketch for approximate tree learning} \hfill{Jun. 2017 - Nov. 2018}
             \item Implemented a message passing protocol using RabbitMQ to broker messages between Google API, ElectronJS, and VS Code
         \end{itemize}
       }
-    \resumeSubItem{Kaggle Competition: Home Credit Default Risk}{Trained a 3D-CNN model on Microsoft Azure for action localization on drowning people in swimming pools. Achieved mean IOU score of 0.45}
+    
+    \resumeSubItem{Kaggle Competition: Home Credit Default Risk}
+    {   \hfill{Jul.2018 - Aug.2018}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Builded a lightGBM model to achieve 0.805 AUC value. Cleaning and extracting the variables of credit card staging channel nearly 200, using stepwise discriminant analysis and random forest to filter variables.
+            \item Generated A/B test for evaluation,improved response rate by nearly 1\%
+        \end{itemize}
+    }
+
+
   \resumeSubHeadingListEnd
 
 %-----------Addtional Experience & Achievements-----------------
