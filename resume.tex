@@ -85,6 +85,8 @@
 
 \begin{document}
 
+\fancyfoot[C]{} 
+
 %----------HEADING-----------------
 \begin{center}
   \small \textbf{\href{chiang233.github.io}{\huge Yitao Jiang}} \\  \href{jyt.chiang@gmail.com}{\color{blue}\underline{jyt.chiang@gmail.com}} $\vert$
@@ -160,8 +162,9 @@
     \resumeSubItem{Closure Risk Forecast Model for SME}
      {\vspace{-5pt} \hfill{May. 2019 - Jul. 2019}
         \begin{itemize}
-            \item Implemented a Xgboost model to predict the probability of small and micro enterprisies going out of business, which achieved a 0.74 AUC value and satisfied the ordering requirement 
-            \item 
+            \item Extracted data from Hive, processed enterprisies registration information data and identified target variables through data exploration
+            \item Utilized Xgboost model to predict the probability of small and micro enterprisies going out of business, which achieved a 0.74 AUC value and satisfied the ordering requirement 
+
         \end{itemize}
      }
      
@@ -169,8 +172,8 @@
     {  \hfill{Feb. 2019 - Apr. 2019}
        \vspace{-5pt}
         \begin{itemize}
-            \item Propose a novel method for Enterprise Rating. Similar to the Nearest Neighbor Algorithm, we define good and bad cluster, then calculate the distance between enterprise and the cluster as basis to build up a more discriminating rating for listed enterprise.
-            \item Implemented a ordinal logistic regression for rating result and output model weight to generalize to the enterprise test sample that issues bonds, and keep a uniform rating distribution with PSI=0.1
+            \item Proposed a novel method for Enterprise Rating. Similar to the Nearest Neighbor Algorithm, we defined good and bad cluster, then calculated the distance between enterprise and the cluster as basis to build up a more discriminating rating for listed enterprise
+            \item Implemented a ordinal logistic regression for rating result and output model weight to generalize to the enterprise test sample that issues bonds, and remained a uniform rating distribution with PSI=0.1
         \end{itemize}
     }
     
@@ -187,7 +190,7 @@
     {   \hfill{Jul. 2018 - Aug. 2018}
         \vspace{-5pt}
         \begin{itemize}
-            \item Exploration data analysis between millions of home credit application's history data, feature selection and simplification  by used PCA, feature aggregation and hand-crafted feature engineering. Implemented a lightGBM model to achieve 0.805 AUC value
+            \item Exploration data analysis between millions of home credit application's history data, feature selection and simplification by used PCA, feature aggregation and hand-crafted feature engineering. Implemented a lightGBM model to achieve 0.805 AUC value
         \end{itemize}
     }
     
@@ -195,7 +198,7 @@
     {   \hfill{Mar. 2018 - May. 2018}
         \vspace{-5pt}
         \begin{itemize}
-            \item Processed data mainly consider time and space variable, used KNN algorithm to fill the missing values, constructed more than 150 features to implemented a lightGBM model 
+            \item Processed data mainly consider time and space variable, used KNN algorithm to fill the missing values, constructed more than 150 features to implemented a lightGBM model with 95\% accuracy
         \end{itemize}
     }    
 
