@@ -6,7 +6,6 @@
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -16,6 +15,10 @@
 \usepackage{enumitem}
 \usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
+
+\usepackage{CJK}
+
+% \usepackage{CJKutf8}
 
 \usepackage[charter]{mathdesign} % Bitstream Charter
 % \usepackage{newpxtext,newpxmath} % Palatino
@@ -84,17 +87,20 @@
 
 
 \begin{document}
+\begin{CJK*}{UTF8}{gkai}
 
 \fancyfoot[C]{} 
 
 %----------HEADING-----------------
 \begin{center}
-  \small \textbf{\href{chiang233.github.io}{\huge Yitao Jiang}} \\  \href{jyt.chiang@gmail.com}{\color{blue}\underline{jyt.chiang@gmail.com}} $\vert$
-  (+86)188-1412-6198 $\vert$
+  \small \textbf{\href{chiang233.github.io}{\huge Yitao Jiang (蒋毅韬)}} \\  \href{jyt.chiang@gmail.com}{\color{blue}\underline{jyt.chiang@gmail.com}} $\vert$
+  (+65) 8879-7378 $\vert$
   LinkedIn: \href{https://www.linkedin.com/in/chiang1049/}{\color{blue}\underline{chiang}} $\vert$
   Github: \href{https://github.com/chiang233}{\color{blue}\underline{chiang}} \\
-  \small Zengcheng Distric, Guangzhou, Guangdong Province, China
+  \small September 1994, From China
 \end{center}
+
+\hspace*{\fill} 
 
 %-----------EDUCATION-----------------
 \shorterSection{Education}
@@ -103,41 +109,81 @@
       {South China Agricultural University (SCAU)}{Guangzhou, CHN}
       {Bachelor of Science(B.Sc.);  Applied Mathematics}{Sep. 2013 - Jun. 2017}{
      % \resumeItemNoBullet{Thesis}{ }
-      \resumeItemNoBullet{Relevant Coursework}{Mathematical Analysis, Advanced Mathematics, Probability Theory and Mathematical Statistics, Stochastic Process}
+      \resumeItemNoBullet{Relevant Coursework}{Mathematical Analysis, Advanced Mathematics, Probability Theory and Mathematical Statistics, Stochastic Process, Quantitative Analysis}
     }
 
   \resumeSubHeadingListEnd
+  \hspace*{\fill} 
 
 %-----------SKILLS-----------------
 \shorterSection{Skills}
   \resumeSubHeadingListStart
   \small
     \item{
-     \textbf{Programming}{: Python, Hive, SQL, SAS, LaTeX}
+     \textbf{Programming}{: Python, Git, Hive, SQL, SAS, LaTeX}
     }
     \vspace{-5pt}
     \item{
-     \textbf{Libraries}{: Xgboost, LightGBM, h2o, Scikit-Learn, Numpy, Pandas, Pyspark, Jupyter, TensorFlow}
+     \textbf{Libraries}{: Xgboost, LightGBM, h2o, Scikit-Learn, Numpy, Pandas, Pyspark}
     }
     \vspace{-5pt}
     \item{
      \textbf{Languages}{: Chinese, Cantonese, English}
     }
 \resumeSubHeadingListEnd
+  \hspace*{\fill} 
+
+%-----------Strength-----------------
+\shorterSection{Strength}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{}{3.5 years working experience in bank and Fintech company, familiar with loan risk control process.}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{}{Strong quantitative, statistical and modeling skills, strong programming( python,sas,sql) skills.}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{}{Familiar with various machine learning algorithms including LR,Decision Tree, Xgboost, LightGBM,ect.}
+    }
+\resumeSubHeadingListEnd
+  \hspace*{\fill} 
 
 %-----------EXPERIENCE-----------------
 \shorterSection{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {JD Digits Technology Holding Co.Ltd (formerly JD Finance) }{Beijing, CHN}
-      {Risk Analyst}{Dec. 2018 - Present}
+        {OneConnect Financial Technology (Singapore) Co.Ltd}{Singapore, SG}
+      {Data Scientist}{Oct. 2019 - Now}
+      \resumeItemListStart
+        \resumeItem{Modeling and Analysis :} 
+          {Conduct risk control process for financial institutions, and build up credit scorecard for loan product to decrease loan loss given. Provide risk modeling solutions based on machine learning, and successfully support over 5 financial institutions in Southeast Asia. Responsible for data monitoring and analysis for the lending of partner financial institutions.
+          }
+        \resumeItem{Data Product :} 
+          {Provide data product design solutions for different data providers' featured data, including the development of credit scores, data labeling API, and data report productization.
+          }
+         \resumeItem{Risk Strategy :}
+         {Deep into the risk control needs of cooperative financial institutions at different stages, including: credit risk, fraud risk, etc. Develop risk rule solutions for financial institutions' business pain points.}
+        \resumeItem{Team Collaboration :} 
+          {Responsible for building and maintaining the team modeling platform, developing risk modeling toolkits to support the team's efficient model development work, and collaborating with team members to complete project delivery and implementation.
+          }
+    \resumeItemListEnd
+    
+    \resumeSubheading
+     {JD Digits Technology Holding Co.Ltd (formerly JD Finance) }{Beijing, CHN}
+      {Risk Analyst}{Dec. 2018 - Oct. 2019}
       \resumeItemListStart
         \resumeItem{Data Analysis :} 
-          {Gain insight into business through metrics and visualization,output analysis report to support business, such as the commercial paper business's offline advertising analysis
+          {Gain insight into business through metrics and visualization,output analysis report to support business, such as SME business credit analysis, invoice data analysis.
+          }
+        \resumeItem{Data Product :} 
+          {Based on the industrial and commercial database and Jingdong's internal data,help to process the data fields of the enterprise credit report, establish the enterprise portrait index system, and provide API data service solutions.
           }
         \resumeItem{Modeling :}
-          {Bulid machine learning or statistical models to solve business problems,mainly focus on rating model for listed enterprises and SME's closure risk model
+          {Bulid machine learning or statistical models to solve business problems,such as rating model for listed enterprises, SME's risk model and business owners risk model.
           }
 
       \resumeItemListEnd
@@ -148,32 +194,82 @@
       \resumeItemListStart
         \resumeItem{Data Monitoring :}
           {Establish the data index system of each income product (credit card installment, Cash instalment, etc.), monitor customer lifetime value of AARRR , support the business to understand the product's operation situation and the problem}
-        \resumeItem{Assist to Develop Strategy for Installment Business :}
+        \resumeItem{Growth Strategy for Installment Business :}
           {Generate data-driven growth strategy for business, responsible for channel's data operation strategy and A/B testing program evaluation and development }          
         \resumeItem{Data Analysis and Modeling :}
-          {Support business growth with analytics and mining for credit card customers, output a thematic analysis report or an algorithmic model }            
+          {Support business growth with data analysis and mining for credit card customers, output a thematic analysis report or an algorithmic model regularly.}            
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+  \hspace*{\fill} 
+
+
+
 
 %-----------PROJECTS-----------------
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Closure Risk Forecast Model for SME}
-     {\vspace{-5pt} \hfill{May. 2019 - Jul. 2019}
+    \resumeSubItem{Vietnam Tien Phong Commercial
+ Bank - Personal Loan Risk Solution}
+        {   \hfill{Sep. 2020 - Oct. 2020}
+        \vspace{-5pt}
         \begin{itemize}
-            \item Extracted data from Hive, processed enterprisies registration information data and identified target variables through data exploration
-            \item Utilized Xgboost model to predict the probability of small and micro enterprisies going out of business, which achieved a 0.74 AUC value and satisfied the ordering requirement 
+            \item Construct credit modeling scorecard for new product based on similar customer segments of existing TPBank customers' historical loan data.Implemented a XGBoost model to achieve 0.746 AUC value, while LR base model having 0.703 AUC value.
+            \item Combine external multiparty data to develop risk strategy, such as risk eligibility policy, anti-fraud rules, and risk assessment. Conduct back testing of third-party data and mining the valid features to build risk rules.
+        \end{itemize}
+     }
+    \resumeSubItem{Indonesia Bank Sinarmas - mSME Loan Risk Solution}
+        {   \hfill{Jul. 2020 - Aug. 2020}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Developed the application scorecard for mSME loan product, including LR model for ETB customer segment (KS: 33 GINI: 45), expert scorecard (AHP+expert judgment) for NTB customer segment. 
+            \item Use external 3rd party data and device fingerprints to create risk rules, including such as real-name authentication, blacklist inquiries, and credit information check from credit bureaus.
+            \item Communicate with BSIM on their requirements, follow up and implement the development of risk programs.
+            
+        \end{itemize}
+     }
+     \resumeSubItem{Singapore GeTs(Global eTrade Services) - Data Product Solution}
+        {   \hfill{Jul. 2020 - Aug. 2020}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Provide model design solutions based on trade data.Construction of scoring products using XGBoost for predicting the trade activity of firms, and built a segment rule by cluster algorithm and decision tree.
+             \item Provide framework design and implementation of data products based on GeTs internal data, including trade reports and data labeling APIs.
+            
+        \end{itemize}
+     }
+
+    \resumeSubItem{Indonesia KBIJ Credit Bureau - Risk Score Product}
+        {   \hfill{Mar. 2020 - Aug. 2020}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item 
+            Implement a LR scorecard model for NTB segment, as part of KBIJ Credit Bureau's SKORKU credit scoring product, and also provide the API the design for implementation.
+            \item Mining and analyzing the internal data of KBIJ Credit Bureau.Participate in the derivation and framework design of multiple lending inquiry product, and the framework design and development of black list data product.
+            
+        \end{itemize}
+     }
+    \resumeSubItem{Closure Risk Forecast Model for SME}
+     {\vspace{-5pt} \hfill{Jul. 2019 - Aug. 2019}
+        \begin{itemize}
+            \item Extracted data from Hive, processed enterprisies registration information data and identified target variables through data exploration.
+            \item Utilized Xgboost model to predict the probability of small and micro enterprisies going out of business, which achieved a 0.74 AUC value and having a good distinguishability.
 
         \end{itemize}
      }
-     
+    \resumeSubItem{Risk Model for Invoice loan}
+     {\vspace{-5pt} \hfill{May. 2019 - Jul. 2019}
+        \begin{itemize}
+            \item Based on invoice data and tax data, more than 300 features were processed and a credit scorecard (KS:25) was developed for invoice lending product's risk decision.
+            \item Approximately 5\% reduction in bad debt rate after model go-live and strategy adjustment.
+
+        \end{itemize}
+     }
     \resumeSubItem{Rating Model for Listed Enterprise}
     {  \hfill{Feb. 2019 - Apr. 2019}
        \vspace{-5pt}
         \begin{itemize}
             \item Proposed a novel method for Enterprise Rating. Similar to the Nearest Neighbor Algorithm, we defined good and bad cluster, then calculated the distance between enterprise and the cluster as basis to build up a more discriminating rating for listed enterprise
-            \item Implemented a ordinal logistic regression for rating result and output model weight to generalize to the enterprise test sample that issues bonds, and remained a uniform rating distribution with PSI=0.1
+            \item Implemented a ordinal logistic regression for rating result and output model weight to generalize to the enterprise test sample that issues bonds, and remained a uniform rating distribution with PSI≈0.1 .
         \end{itemize}
     }
     
@@ -181,16 +277,8 @@
     {   \hfill{Jun. 2018 - Sep. 2018}
         \vspace{-5pt}
         \begin{itemize}
-            \item Implemented GBDT model to achieve 78.66\% accuracy. Cleaned and extracted the variables of credit card staging channel nearly 200, used stepwise discriminant analysis and random forest to filter variables
-            \item Generated A/B test for evaluation,improved response rate by nearly 1\%
-        \end{itemize}
-    }
-    
-    \resumeSubItem{Kaggle Competition - Home Credit Default Risk}
-    {   \hfill{Jul. 2018 - Aug. 2018}
-        \vspace{-5pt}
-        \begin{itemize}
-            \item Exploration data analysis between millions of home credit application's history data, feature selection and simplification by used PCA, feature aggregation and hand-crafted feature engineering. Implemented a lightGBM model to achieve 0.805 AUC value
+            \item Implemented GBDT model to achieve 78.66\% accuracy. Cleaned and extracted the variables of credit card staging channel nearly 200, used stepwise discriminant analysis and random forest to filter variables.
+            \item Generated A/B test for evaluation,achieving a 10\% more response rate than previous strategy.
         \end{itemize}
     }
     
@@ -198,11 +286,12 @@
     {   \hfill{Mar. 2018 - May. 2018}
         \vspace{-5pt}
         \begin{itemize}
-            \item Processed data mainly consider time and space variable, used KNN algorithm to fill the missing values, constructed more than 150 features to implemented a lightGBM model with 95\% accuracy
+            \item Processed data mainly consider time and space variable, used KNN algorithm to fill the missing values, constructed more than 150 features to implemented a lightGBM model with 95\% accuracy.
         \end{itemize}
-    }    
+    }
 
   \resumeSubHeadingListEnd
+  \hspace*{\fill} 
 
 %-----------Addtional Experience & Achievements-----------------
 \shorterSection{Additional Experience \& Achievements}
@@ -223,12 +312,10 @@
     $\vert$
     \href{https://www.comap.com/undergraduate/contests/mcm/contests/2017/results/2017_ICM_Problem_D_Results.pdf}{\color{blue}\underline{link}} $\vert$
 }
-    \vspace{-5pt}    
-    
-    
-    \item{The Second Prize Scholarship awarded by \textbf{SCAU} in 2016 }
-    \vspace{-5pt}
+
 
   \resumeSubHeadingListEnd
 %-------------------------------------------
+\end{CJK*}
+
 \end{document}
